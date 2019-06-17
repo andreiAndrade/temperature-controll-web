@@ -1,0 +1,39 @@
+.App {
+  display: flex;
+  flex-wrap: wrap;
+
+  & > :not(:nth-child(3n+3)) {
+    margin-right: 20px;
+  }
+  & > .beer-card {
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.1);
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+
+    & > .title {
+      width: 100%;
+    }
+
+    & > .temperature {
+      width: 70%;
+      font-size: 70px;
+    }
+
+    & > .range {
+      width: 30%;
+    }
+  }
+
+  .background-ok {
+    background-color: lightgreen;
+  }
+
+  .background-danger {
+    background-color: lightcoral;
+  }
+}
